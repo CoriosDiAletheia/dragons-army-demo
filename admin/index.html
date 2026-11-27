@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panel · Dragon's Army</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b0a0c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500..700&family=Chakra+Petch:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="admin.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0a0c'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23e3121d' stroke-width='3'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="dragon" viewBox="0 0 100 100">
+      <path d="M88.2 61.7A40 40 0 1 1 88.6 39.6" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+      <path fill="currentColor" fill-rule="evenodd" d="M30 76L27 64L19 60L28 55L29 48L21 41L32 39L36 32L23 16L44 26L52 25L61 28L76 33L85 38L78 41L64 42L60 46L79 50L67 54L55 55C50 60 50 68 53 76ZM55 31L64 32.5L56 35.5Z"/>
+      <path d="M29 74c-6 4-6 11 3 13 9 2 18-1 22-6" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-cards" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="4" y="5" width="9" height="13" rx="1.5" transform="rotate(-8 8.5 11.5)"/><rect x="11" y="5" width="9" height="13" rx="1.5" transform="rotate(8 15.5 11.5)"/></g></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></g></symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 8h3l1.6-2.4h6.8L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.6"/></g></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4ZM13.5 6.5l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></g></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></g></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></g></symbol>
+  </defs>
+</svg>
+
+<!-- Acceso -->
+<main class="login" data-login hidden>
+  <div class="login__box">
+    <svg class="login__mark" viewBox="0 0 100 100" aria-hidden="true"><use href="#dragon"/></svg>
+    <h1>Panel de la tienda</h1>
+    <p>Aquí Dragon's Army sube sus cartas, preventas y torneos. Lo que guardes aparece en la página al momento.</p>
+    <button class="btn btn--red btn--block" type="button" data-enter><svg aria-hidden="true"><use href="#i-lock"/></svg>Entrar a la demostración</button>
+    <p class="login__note">En la versión real, la tienda entra con su correo y una contraseña que solo ella conoce.</p>
+    <a class="link" href="../index.html">Volver a la página</a>
+  </div>
+</main>
+
+<!-- Panel -->
+<div class="app" data-app hidden>
+  <header class="top">
+    <a class="top__brand" href="../index.html"aria-label="Ver la página de Dragon's Army">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><use href="#dragon"/></svg>
+      <span>Dragon's Army<small>Panel</small></span>
+    </a>
+    <a class="btn btn--ghost btn--sm" href="../index.html#singles" target="_blank" rel="noopener" data-view-site><svg aria-hidden="true"><use href="#i-ext"/></svg><span>Ver página</span></a>
+  </header>
+
+  <nav class="tabs" aria-label="Secciones del panel">
+    <button type="button" class="tab" aria-current="page" data-tab="vitrina"><svg aria-hidden="true"><use href="#i-cards"/></svg><span>Vitrina</span></button>
+    <button type="button" class="tab" data-tab="torneos"><svg aria-hidden="true"><use href="#i-cal"/></svg><span>Torneos</span></button>
+    <button type="button" class="tab" data-tab="ajustes"><svg aria-hidden="true"><use href="#i-gear"/></svg><span>Ajustes</span></button>
+  </nav>
+
+  <!-- Vitrina -->
+  <section class="view" data-view="vitrina" aria-labelledby="v-title">
+    <div class="view__head">
+      <div>
+        <h1 id="v-title">Vitrina</h1>
+        <p class="muted" data-v-count></p>
+      </div>
+      <button class="btn btn--red" type="button" data-new-card><svg aria-hidden="true"><use href="#i-plus"/></svg>Nueva carta</button>
+    </div>
+    <div class="toolbar">
+      <label class="search">
+        <svg aria-hidden="true"><use href="#i-search"/></svg>
+        <span class="sr-only">Buscar en la vitrina</span>
+        <input type="search" placeholder="Buscar por nombre" data-search autocomplete="off">
+      </label>
+      <div class="chips" role="group" aria-label="Filtrar" data-v-filter>
+        <button type="button" class="chip is-on" aria-pressed="true" data-f="all">Todo</button>
+        <button type="button" class="chip" aria-pressed="false" data-f="on">En vitrina</button>
+        <button type="button" class="chip" aria-pressed="false" data-f="sold">Vendidas</button>
+      </div>
+    </div>
+    <ul class="items" data-items></ul>
+  </section>
+
+  <!-- Torneos -->
+  <section class="view" data-view="torneos" aria-labelledby="t-title" hidden>
+    <div class="view__head">
+      <div>
+        <h1 id="t-title">Torneos</h1>
+        <p class="muted">Se repiten cada semana. Toca un día para verlo.</p>
+      </div>
+      <button class="btn btn--red" type="button" data-new-event><svg aria-hidden="true"><use href="#i-plus"/></svg>Nuevo torneo</button>
+    </div>
+    <div class="days" role="tablist" aria-label="Día" data-days></div>
+    <ul class="items" data-events></ul>
+  </section>
+
+  <!-- Ajustes -->
+  <section class="view" data-view="ajustes" aria-labelledby="a-title" hidden>
+    <div class="view__head"><div><h1 id="a-title">Ajustes</h1></div></div>
+    <div class="panel">
+      <h2>Datos de ejemplo</h2>
+      <p class="muted">Regresa la vitrina y los torneos a como venían en la demostración. Se borra lo que hayas agregado en este dispositivo.</p>
+      <button class="btn btn--ghost" type="button" data-reset>Restablecer demostración</button>
+    </div>
+    <div class="panel">
+      <h2>Sesión</h2>
+      <p class="muted">Cierra el panel en este dispositivo.</p>
+      <button class="btn btn--ghost" type="button" data-logout>Cerrar sesión</button>
+    </div>
+    <div class="panel panel--info">
+      <h2>Cómo funciona en la versión real</h2>
+      <ul>
+        <li>Solo la tienda entra, con su correo y contraseña.</li>
+        <li>Los cambios se publican al instante para todos los visitantes.</li>
+        <li>Las fotos se comprimen solas para que la página siga cargando rápido.</li>
+        <li>Hay respaldo diario de todo.</li>
+      </ul>
+      <p class="muted">En esta demostración los cambios se guardan solo en este navegador.</p>
+    </div>
+  </section>
+</div>
+
+<!-- Formulario: carta -->
+<dialog class="sheet" data-card-sheet aria-labelledby="cs-title">
+  <form method="dialog" class="sheet__form" data-card-form novalidate>
+    <header class="sheet__head">
+      <h2 id="cs-title" data-cs-title>Nueva carta</h2>
+      <button class="icon-btn" type="button" data-close aria-label="Cerrar"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+    </header>
+    <div class="sheet__body">
+      <div class="field">
+        <span class="label" id="photo-l">Foto <b aria-hidden="true">*</b></span>
+        <label class="photo" data-photo>
+          <input type="file" accept="image/*" capture="environment" data-file aria-labelledby="photo-l" aria-describedby="photo-h photo-e">
+          <img alt="" data-preview hidden>
+          <span class="photo__empty"><svg aria-hidden="true"><use href="#i-cam"/></svg><b>Tomar o elegir foto</b><small>Vertical, con buena luz</small></span>
+          <span class="photo__busy" data-busy hidden>Preparando foto…</span>
+        </label>
+        <small class="help" id="photo-h">Se recorta y comprime sola.</small>
+        <small class="err" id="photo-e" data-err="photo" role="alert"></small>
+      </div>
+      <div class="field">
+        <label class="label" for="f-name">Nombre <b aria-hidden="true">*</b></label>
+        <input id="f-name" name="name" type="text" required maxlength="70" autocomplete="off" placeholder="Ej. Umbreon VMAX · arte alternativo" aria-describedby="name-e">
+        <small class="err" id="name-e" data-err="name" role="alert"></small>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label class="label" for="f-cat">Juego</label>
+          <select id="f-cat" name="cat" data-cat-select></select>
+        </div>
+        <div class="field">
+          <label class="label" for="f-price">Precio (MXN) <b aria-hidden="true">*</b></label>
+          <input id="f-price" name="price" type="number" inputmode="numeric" min="1" step="1" required placeholder="0" aria-describedby="price-e">
+          <small class="err" id="price-e" data-err="price" role="alert"></small>
+        </div>
+      </div>
+      <label class="check"><input type="checkbox" name="from"><span>Mostrar como "desde" (precio mínimo)</span></label>
+      <div class="field">
+        <label class="label" for="f-meta">Detalle</label>
+        <input id="f-meta" name="meta" type="text" maxlength="60" autocomplete="off" placeholder="Ej. Pokémon · NM" aria-describedby="meta-h">
+        <small class="help" id="meta-h">Estado, rareza o expansión.</small>
+      </div>
+      <div class="field">
+        <label class="label" for="f-stock">Existencias</label>
+        <input id="f-stock" name="stock" type="text" maxlength="24" autocomplete="off" placeholder="Ej. 1 pieza">
+      </div>
+      <div class="field" data-pre-field hidden>
+        <label class="label" for="f-pre">Fecha de lanzamiento</label>
+        <input id="f-pre" name="pre" type="datetime-local" aria-describedby="pre-h">
+        <small class="help" id="pre-h">Se muestra una cuenta regresiva en la página.</small>
+      </div>
+    </div>
+    <footer class="sheet__foot">
+      <button class="btn btn--ghost btn--danger" type="button" data-delete hidden>Eliminar</button>
+      <button class="btn btn--red" type="submit" data-save>Guardar y publicar</button>
+    </footer>
+  </form>
+</dialog>
+
+<!-- Formulario: torneo -->
+<dialog class="sheet" data-event-sheet aria-labelledby="es-title">
+  <form method="dialog" class="sheet__form" data-event-form novalidate>
+    <header class="sheet__head">
+      <h2 id="es-title" data-es-title>Nuevo torneo</h2>
+      <button class="icon-btn" type="button" data-close aria-label="Cerrar"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+    </header>
+    <div class="sheet__body">
+      <fieldset class="field">
+        <legend class="label">Juego</legend>
+        <div class="pick" data-game-pick></div>
+      </fieldset>
+      <div class="field">
+        <label class="label" for="e-title">Nombre <b aria-hidden="true">*</b></label>
+        <input id="e-title" name="title" type="text" required maxlength="60" autocomplete="off" placeholder="Ej. Torneo semanal Pokémon" aria-describedby="title-e">
+        <small class="err" id="title-e" data-err="title" role="alert"></small>
+      </div>
+      <fieldset class="field">
+        <legend class="label">Día</legend>
+        <div class="pick pick--days" data-day-pick></div>
+      </fieldset>
+      <fieldset class="field">
+        <legend class="label">Sucursal</legend>
+        <div class="pick" data-branch-pick></div>
+        <small class="err" data-err="branch" role="alert"></small>
+      </fieldset>
+      <div class="row">
+        <div class="field">
+          <label class="label" for="e-time">Hora <b aria-hidden="true">*</b></label>
+          <input id="e-time" name="time" type="time" required step="900" aria-describedby="time-h time-e">
+          <small class="help" id="time-h" data-time-help></small>
+          <small class="err" id="time-e" data-err="time" role="alert"></small>
+        </div>
+        <div class="field">
+          <label class="label" for="e-fee">Cuota</label>
+          <input id="e-fee" name="fee" type="text" maxlength="16" autocomplete="off" placeholder="Ej. $100 o Gratis">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label" for="e-format">Formato</label>
+        <input id="e-format" name="format" type="text" maxlength="60" autocomplete="off" placeholder="Ej. Estándar · 3 rondas suizas">
+      </div>
+    </div>
+    <footer class="sheet__foot">
+      <button class="btn btn--ghost btn--danger" type="button" data-delete hidden>Eliminar</button>
+      <button class="btn btn--red" type="submit">Guardar y publicar</button>
+    </footer>
+  </form>
+</dialog>
+
+<div class="toast" role="status" aria-live="polite" data-toast><span data-toast-msg></span><button type="button" data-toast-act hidden></button></div>
+
+<script src="../assets/js/data.js" defer></script>
+<script src="admin.js" defer></script>
+</body>
+</html>
